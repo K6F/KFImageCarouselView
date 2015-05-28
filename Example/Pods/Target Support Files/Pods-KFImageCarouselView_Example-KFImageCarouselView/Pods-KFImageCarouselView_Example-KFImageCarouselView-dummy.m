@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_KFImageCarouselView_Example_KFImageCarouselView : NSObject
+@end
+@implementation PodsDummy_Pods_KFImageCarouselView_Example_KFImageCarouselView
+@end

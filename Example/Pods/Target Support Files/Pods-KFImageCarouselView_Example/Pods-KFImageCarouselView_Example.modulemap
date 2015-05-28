@@ -1,0 +1,6 @@
+framework module Pods_KFImageCarouselView_Example {
+  umbrella header "Pods-KFImageCarouselView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

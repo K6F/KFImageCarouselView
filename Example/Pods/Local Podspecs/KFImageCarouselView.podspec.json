@@ -1,0 +1,20 @@
+{
+  "name": "KFImageCarouselView",
+  "version": "0.1.0",
+  "summary": "KFImageCarouselView, image carouse, support storyboard",
+  "description": "                       ** Usage:\n                       In storyboard, change the class name of a view to init, use KFImageCarouseViewDatasource And KFImageCarouseViewDelegate to control.\n",
+  "homepage": "https://github.com/K6F/KFImageCarouselView",
+  "license": "MIT",
+  "authors": {
+    "K6F": "Fan.Khiyuan@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/K6F/KFImageCarouselView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*"
+}

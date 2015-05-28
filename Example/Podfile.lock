@@ -1,0 +1,14 @@
+PODS:
+  - KFImageCarouselView (0.1.0)
+
+DEPENDENCIES:
+  - KFImageCarouselView (from `../`)
+
+EXTERNAL SOURCES:
+  KFImageCarouselView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KFImageCarouselView: 5034083de8f2324eca81055c080501ae1c96c159
+
+COCOAPODS: 0.36.0
