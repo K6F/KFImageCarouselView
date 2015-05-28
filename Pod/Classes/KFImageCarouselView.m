@@ -177,7 +177,6 @@
         _scrollView = [[UIScrollView alloc] init];
         _scrollView.pagingEnabled = YES;
         _scrollView.bounces = NO;
-        _scrollView.contentSize = CGSizeMake(self.bounds.size.width * 3, self.bounds.size.height);
         _scrollView.showsHorizontalScrollIndicator = NO;
         _scrollView.showsVerticalScrollIndicator = NO;
         [self addSubview:_scrollView];
@@ -185,6 +184,7 @@
         UITapGestureRecognizer* tapGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(p_scrollViewTapedInside)];
         [_scrollView addGestureRecognizer:tapGR];
     }
+    _scrollView.contentSize = CGSizeMake(self.bounds.size.width * 3, self.bounds.size.height);
     _scrollView.frame = self.bounds;
     return _scrollView;
 }
