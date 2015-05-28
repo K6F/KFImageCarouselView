@@ -13,7 +13,8 @@
     NSArray *imageNames;
 }
 
-@property (weak, nonatomic) IBOutlet KFImageCarouselView *imageCarouseView;
+@property (weak, nonatomic) IBOutlet KFImageCarouselView *imageCarouselView;
+@property (weak, nonatomic) IBOutlet KFImageCarouselView *scaledImageCarouselView;
 
 @end
 
@@ -27,10 +28,15 @@
     imageNames = @[@"image1",@"image2",@"image3"];
     
     // set datasource
-    _imageCarouseView.dataSource = self;
-    _imageCarouseView.delegate   = self;
+    _imageCarouselView.dataSource = self;
+    _imageCarouselView.delegate   = self;
     
-     _imageCarouseView.kfDisplayDuration = 2;
+     _imageCarouselView.kfDisplayDuration = 2.f;
+    
+    _scaledImageCarouselView.dataSource = self;
+    _scaledImageCarouselView.delegate = self;
+    
+    _scaledImageCarouselView.kfDisplayDuration = 2.f;
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -50,9 +56,9 @@
     NSLog(@"viewDidLayoutSubviews");
 }
 
-#pragma mark - KFImageCarouseViewDataSource
+#pragma mark - KFimageCarouselViewDataSource
 - (NSInteger)kf_countOfImages{
-    NSLog(@"KFImageCarouseView count");
+    NSLog(@"KFimageCarouselView count");
     return imageNames.count;
 }
 - (void)kf_imageView:(UIImageView *)imageView loadImageAtIndex:(NSInteger)index{

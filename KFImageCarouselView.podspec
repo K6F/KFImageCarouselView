@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KFImageCarouselView"
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.summary          = "KFImageCarouselView, image carouse, support storyboard,use as a billboard or a goods shelf。"
   s.description      = <<-DESC
                        You can use it as a billboard or a goods shelf, or something else;

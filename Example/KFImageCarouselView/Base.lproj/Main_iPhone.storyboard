@@ -25,16 +25,27 @@
                                     <constraint firstAttribute="width" secondItem="0aP-gP-5r2" secondAttribute="height" multiplier="16:5" id="k83-mi-bIx"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ads-V6-zuy" customClass="KFImageCarouselView">
+                                <rect key="frame" x="0.0" y="428" width="320" height="140"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ads-V6-zuy" secondAttribute="height" multiplier="16:7" id="A8h-Wi-YKO"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0aP-gP-5r2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="0gu-lu-YyK"/>
                             <constraint firstAttribute="trailing" secondItem="0aP-gP-5r2" secondAttribute="trailing" id="2J9-an-bhY"/>
+                            <constraint firstAttribute="trailing" secondItem="ads-V6-zuy" secondAttribute="trailing" id="6ka-Yk-KSC"/>
+                            <constraint firstItem="ads-V6-zuy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="LsG-Lv-MG9"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ads-V6-zuy" secondAttribute="bottom" id="pS0-1w-LGE"/>
                             <constraint firstItem="0aP-gP-5r2" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="sL1-qS-Vru"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageCarouseView" destination="0aP-gP-5r2" id="RoY-Ed-gcI"/>
+                        <outlet property="imageCarouselView" destination="0aP-gP-5r2" id="Io5-z5-DfO"/>
+                        <outlet property="scaledImageCarouselView" destination="ads-V6-zuy" id="4DM-x9-a9W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
