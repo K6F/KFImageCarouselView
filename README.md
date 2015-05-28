@@ -32,14 +32,13 @@ And create an IBOutlet of view.
 Use **KFImageCarouselViewDataSource** And **KFImageCarouselViewDelegate** to control.
 
 
-### Property
+## Property & Method
+
+###Property
 
 #### kfDisplayDuration
 Duration for timer to change image;
 Duration must more than or equal 1 second, or would be ignored.
-
-#### pageControl
-UIPageControl
 
 #### dataSource
 dataSource with protocol **KFImageCarouselViewDataSource**
@@ -81,6 +80,9 @@ delegate with protocol ** KFImageCarouselViewDelegate**
 - (void)kf_didTapImageAtIndex:(NSInteger)index;
 @end
 ```
+
+#### pageControl
+UIPageControl
 
 ### Method
 #### reloadData

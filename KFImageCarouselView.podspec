@@ -9,9 +9,10 @@
 
 Pod::Spec.new do |s|
   s.name             = "KFImageCarouselView"
-  s.version          = "0.1.0"
-  s.summary          = "KFImageCarouselView, image carouse, support storyboard"
+  s.version          = "0.2.0"
+  s.summary          = "KFImageCarouselView, image carouse, support storyboard,use as a billboard or a goods shelf。"
   s.description      = <<-DESC
+                       You can use it as a billboard or a goods shelf, or something else;
                        ** Usage:
                        In storyboard, change the class name of a view to init, use KFImageCarouseViewDatasource And KFImageCarouseViewDelegate to control.
                        DESC

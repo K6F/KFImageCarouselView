@@ -17,10 +17,11 @@
  *
  *  Duration must >= 1 second, or would be ignored.
  */
-@property (nonatomic,assign) NSInteger                         kfDisplayDuration;
-@property (nonatomic,strong) UIPageControl                     *pageControl;
+@property (nonatomic,assign) NSTimeInterval                    kfDisplayDuration;
 @property (nonatomic,assign) id<KFImageCarouselViewDataSource> dataSource;
 @property (nonatomic,assign) id<KFImageCarouselViewDelegate>   delegate;
+
+@property (nonatomic,strong) UIPageControl                     *pageControl;
 
 - (void)reloadData;
 @end

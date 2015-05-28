@@ -11,7 +11,7 @@
 @interface KFImageCarouselView()<UIScrollViewDelegate>{
     NSInteger pCurrentIndex;
     NSInteger pCountOfItems;
-    NSInteger pDisplayDuration;
+    NSTimeInterval pDisplayDuration;
     
 }
 @property (nonatomic,copy) NSMutableArray *imageArray;
@@ -140,13 +140,13 @@
     [self reloadData];
 }
 
-- (NSInteger)kfDisplayDuration{
-    if (pDisplayDuration < 1) {
-        pDisplayDuration = 1;
+- (NSTimeInterval)kfDisplayDuration{
+    if (pDisplayDuration < 1.f) {
+        pDisplayDuration = 1.f;
     }
     return pDisplayDuration;
 }
-- (void)setKfDisplayDuration:(NSInteger)duration{
+- (void)setKfDisplayDuration:(NSTimeInterval)duration{
     pDisplayDuration = duration;
     if (_advTimer) {
         [_advTimer invalidate];
