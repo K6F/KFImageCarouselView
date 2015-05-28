@@ -1,4 +1,4 @@
-#
+
 # Be sure to run `pod lib lint KFImageCarouselView.podspec' to ensure this is a
 # valid spec and remove all comments before submitting the spec.
 #
@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KFImageCarouselView"
-  s.version          = "0.4.0"
+  s.version          = "0.5.0"
   s.summary          = "KFImageCarouselView, image carouse, support storyboard,use as a billboard or a goods shelf。"
   s.description      = <<-DESC
                        You can use it as a billboard or a goods shelf, or something else;
