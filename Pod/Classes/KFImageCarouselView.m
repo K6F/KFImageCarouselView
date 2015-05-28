@@ -191,28 +191,31 @@
 
 - (UIImageView *)prevImageView{
     if (!_prevImageView) {
-        _prevImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)];
+        _prevImageView = [[UIImageView alloc] init];
         _prevImageView.contentMode = UIViewContentModeScaleToFill;
         [self.scrollView addSubview:_prevImageView];
     }
+    _prevImageView.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
     return _prevImageView;
 }
 
 - (UIImageView *)currentImageView{
     if (!_currentImageView) {
-        _currentImageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.bounds.size.width, 0, self.bounds.size.width, self.bounds.size.height)];
+        _currentImageView = [[UIImageView alloc] init];
         _currentImageView.contentMode = UIViewContentModeScaleToFill;
         [self.scrollView addSubview:_currentImageView];
     }
+    _currentImageView.frame = CGRectMake(self.bounds.size.width, 0, self.bounds.size.width, self.bounds.size.height);
     return _currentImageView;
 }
 
 - (UIImageView *)nextImageView{
     if (!_nextImageView) {
-        _nextImageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.bounds.size.width * 2, 0, self.bounds.size.width, self.bounds.size.height)];
+        _nextImageView = [[UIImageView alloc] init];
         _nextImageView.contentMode = UIViewContentModeScaleToFill;
         [self.scrollView addSubview:_nextImageView];
     }
+    _nextImageView.frame = CGRectMake(self.bounds.size.width * 2, 0, self.bounds.size.width, self.bounds.size.height);
     return _nextImageView;
 }
 
